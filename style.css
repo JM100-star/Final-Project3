@@ -1,0 +1,147 @@
+body {
+  background: rgba(225, 232, 235);
+  color: rgba(84, 91, 107);
+  padding: 25px;
+  font-family: sans-serif;}
+
+  .avoid {
+    font-weight: bold;
+    color:  rgba(0,0,0);
+     
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: none;
+  }
+
+  img{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-width: 10px;
+    border-color: rgba(169, 188, 204);
+    border-style:groove;
+  }
+
+  .btn {
+    font-size: 20rem;
+    font-weight: 700;
+    padding: 0.5em 0.3em;
+    background-color:var(rgba(193, 207, 219));
+    color:var(rgba(84, 91, 107));
+    border: 2px solid  var(rgba(84, 91, 107));
+
+transition-property: transform;
+transition-duration: 0.3s;
+transition-timing-function: ease;
+transition-delay: 0s;
+
+  }
+  .btn:hover{
+    transform: translateY(-5px);
+    background-color:var(rgba(84, 91, 107));
+    color: var(rgba(193, 207, 219)); 
+  }
+
+   
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-300px);
+      opacity:0%
+    }
+
+    to {
+      transform: translateX(0);
+      opacity:100%;
+    }
+  }
+  h1{
+    animation-name: slideInLeft ;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: none;
+  }
+ @keyframes slideInRight{
+    from {
+      transform: translateX(300px);
+      opacity:0%;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity:100%;
+    }
+  }
+
+  h3{
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: none;
+  }
+
+  p{
+    animation-name: slideInRight;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: none;
+  }
+
+  h4{
+    animation-name: slideInRight;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: none;
+  }
+
+  text{
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: none;
+  }
+
+  @keyframes pop {
+  from {
+    opacity:0%;
+    transform: translateY(-30px);
+
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0px);
+
+  }
+}
+
+img{
+  animation-name:pop;
+  animation-duration:1s;
+  animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: none;
+  
+
+}
